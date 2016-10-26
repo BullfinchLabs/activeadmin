@@ -19,6 +19,6 @@ class ActiveAdmin.TableCheckboxToggler extends ActiveAdmin.CheckboxToggler
       $row.removeClass 'selected'
 
   _didClickCell: (cell) ->
-    $(cell).parent('tr').find(':checkbox').click()
+    $(cell).parent('tr').find('.collection_selection').click()
 
 $.widget.bridge 'tableCheckboxToggler', ActiveAdmin.TableCheckboxToggler
